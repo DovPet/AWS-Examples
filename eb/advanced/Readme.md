@@ -117,7 +117,7 @@ touch .ebextensions/001_envar.config
 ```sh
 aws iam create-instance-profile --instance-profile-name StudySyncInstanceProfile
 aws iam add-role-to-instance-profile \
-    --role-name AWSElasticBeanstalkWebTierRole  \
+    --role-name aws-elasticbeanstalk-ec2-role  \
     --instance-profile-name StudySyncInstanceProfile
 ```
 

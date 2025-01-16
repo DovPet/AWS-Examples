@@ -64,7 +64,8 @@ aws ecr get-login-password --region ca-central-1 | docker login \
 ```sh
 docker pull python:3.13.0a6-slim-bookworm
 docker tag python:3.13.0a6-slim-bookworm 982383527471.dkr.ecr.ca-central-1.amazonaws.com/python:3.13.0a6-slim-bookworm
-docker push 982383527471.dkr.ecr.ca-central-1.amazonaws.com/python:3.13.0a6-slim-bookworm
+docker tag python:3.13.0a6-slim-bookworm 961341545758.dkr.ecr.us-east-1.amazonaws.com/python:3.13.0a6-slim-bookworm
+docker push 961341545758.dkr.ecr.us-east-1.amazonaws.com/python:3.13.0a6-slim-bookworm
 ```
 
  ### Build, tag and push app container
